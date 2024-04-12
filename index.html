@@ -1,12 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="./main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Tirar Dados</title>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Simulador de Tirar Dados 🎲</h1>
+        <div class="controls">
+          <label for="numLanzamientos">Cantidad de lanzamientos:</label>
+          <input type="number" id="numLanzamientos" min="1" value="1">
+          <button id="btnJugar">Jugar</button>
+          <button id="btnReiniciar">Reiniciar</button>
+        </div>
+        <div class="resultado">
+          <h2>Resultado:</h2>
+          <p id="resultadoNumero">-</p>
+        </div>
+        <div class="historial">
+          <h2>Historial de lanzamientos</h2>
+          <div id="historial"></div>
+        </div>
+        <div class="marcador">
+          <h2>Marcador</h2>
+          <p id="puntaje">Puntaje: 0</p>
+        </div>
+      </div>    
+
+  <script src="./js/main.js"></script>
 </body>
 </html>
